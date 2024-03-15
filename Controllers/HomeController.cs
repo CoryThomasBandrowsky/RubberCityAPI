@@ -5,7 +5,7 @@ using System.Text.Json.Nodes;
 namespace RubberCityAPI.Controllers
 {
     [ApiController]
-    [Route("[home]")]
+    [Route("[controller]")]
     public class HomeController : ControllerBase
     {
         private readonly ILogger<HomeController> _logger;

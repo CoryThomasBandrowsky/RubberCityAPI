@@ -3,7 +3,7 @@
 namespace RubberCityAPI.Controllers
 {
     [ApiController]
-    [Route("[users]")]
+    [Route("[controller]")]
     public class UsersController : ControllerBase
     {
         private readonly ILogger<UsersController> _logger;
