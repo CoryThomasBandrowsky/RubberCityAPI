@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+
+  "Values": {
+    "TestValue": "test",
+    "Environment": "dev"
+  },
+
+  "Host": {
+    "LocalHttpPort": 44320,
+    "CORS": "*",
+    "CORSCredentials": false
+  },
+
+  "ConnectionStrings": {
+    "strLocalhost": "Server=localhost;Database=master;Trusted_Connection=True;"
+  }
+}
