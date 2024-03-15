@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RubberCityAPI.Models;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
@@ -15,10 +16,10 @@ namespace RubberCityAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index()
+        public IActionResult Index()
         {
-            var testString = JsonSerializer.Serialize("test time for the big boy");
-            return new JsonResult(testString);
+            var response = new TestResponse("fuck my dad");
+            return Ok(response);
         }
     }
 }
