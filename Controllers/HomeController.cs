@@ -16,9 +16,9 @@ namespace RubberCityAPI.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var response = new TestResponse("fuck my dad");
+            var response = new TestResponse("dad time");
             return Ok(response);
         }
     }
