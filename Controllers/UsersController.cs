@@ -40,8 +40,8 @@ namespace RubberCityAPI.Controllers
         }
 
         // POST: /Users
-        [HttpPost]
-        public async Task<IActionResult> Add([FromBody] User user)
+        [HttpPost("/users/add")]
+        public async Task<IActionResult> Add(User user)
         {
             await _userService.AddUserAsync(user);
             return CreatedAtAction(nameof(GetById), new { id = user.ID }, user);
